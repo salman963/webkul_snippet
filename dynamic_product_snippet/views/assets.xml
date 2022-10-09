@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="custom_snippet_assets_wysiwyg" inherit_id="website.assets_snippet_s_dynamic_snippet_carousel_js_000" name="Shop Wysiwyg Editor">
+        <xpath expr="//link[last()]" position="after">
+            <script type="text/javascript" src="/dynamic_product_snippet/static/src/js/custom_product_snippet.js"/>
+        </xpath>
+    </template>
+
+    <template id="custom_options_assets_wysiwyg" inherit_id="website.assets_wysiwyg" name="Custom Wysiwyg Editor">
+        <xpath expr="//link[last()]" position="after">
+            <script type="text/javascript" src="/dynamic_product_snippet/static/src/js/options.js"/>
+        </xpath>
+    </template>
+</odoo>

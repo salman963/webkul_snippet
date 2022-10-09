@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="inherit_snippets_for_custom_product" inherit_id="website_sale.snippets" name="e-commerce snippets">
+        <xpath expr="//t[@t-snippet='website_sale.s_dynamic_snippet_products']" position="after">
+            <t t-snippet="dynamic_product_snippet.custom_dynamic_snippet_products" t-thumbnail="/dynamic_product_snippet/static/src/img/snippets_thumbs/s_dynamic_snippet.svg"/>
+        </xpath>
+    
+</template>
+</odoo>
